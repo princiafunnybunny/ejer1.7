@@ -1,0 +1,12 @@
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition-property: background-color ;
+    transition-duration: 2s ;
+    transition-timing-function: ease-in;
+}
+
+.cuadrado:hover {
+    background-color: aqua;
+}
