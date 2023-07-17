@@ -1,0 +1,10 @@
+@font-face {
+    font-family:curki;
+    src: url(./font/Belanosima-Regular.ttf);
+}
+
+p{
+    display: inline;
+    font-size:xx-large;  
+    font-family: curki;
+}

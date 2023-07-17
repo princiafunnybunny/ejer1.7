@@ -1,0 +1,38 @@
+h2:first-child {
+    background-color: blueviolet;
+    color: white;
+}
+
+h3:last-child {
+    background-color: darkmagenta;
+    color: white;
+}
+
+h4:nth-child(odd) {
+    background-color: rgb(255, 0, 191);
+}
+
+h4:nth-child(even) {
+    background-color: rgb(126, 6, 96);
+}
+
+h5:nth-child(5) {
+    background-color: rgb(132, 0, 255);
+}
+
+h5:nth-child(3n) {
+    background-color: rgb(255, 0, 93);
+}
+
+input:focus{
+    background-color: red;
+    color: white;
+}
+
+.container-a {
+    margin-top: 30px;
+}
+
+a:hover {
+    background-color: chartreuse ;
+}

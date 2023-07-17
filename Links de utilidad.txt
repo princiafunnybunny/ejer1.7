@@ -1,0 +1,6 @@
+✏️ https://es.learnlayout.com/position.html
+✏️ https://developer.mozilla.org/es/docs/Web/CSS/z-index
+✏️ https://www.w3schools.com/howto/howto_css_sticky_element.asp
+✏️ https://fontawesome.com/
+✏️ http://brandcolors.net/
+✏️ https://codepen.io/
