@@ -1,0 +1,343 @@
+:root {
+    padding-x: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(32, 33, 36);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width:100% ;
+    max-width: 100px;
+    min-width: 65px;
+    max-height: 40px;
+}
+
+.menu {
+    height: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+.menu ul li {
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.menu ul li:hover {
+    border-bottom:1px solid white ;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white
+}
+
+.hero_section {
+    height: calc(100vh - 80px);
+    background-image:url(./ARCHI_933523.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}   
+
+.hero_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 1;
+    mix-blend-mode:darken;
+}
+
+.hero_section * {
+    z-index: 1;
+    position: relative;
+}
+
+.hero_section-text h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+
+}
+
+.hero_section-text h1 span {
+    display: block;
+    font-weight: 700;
+}
+
+.hero_section-more {
+    position:absolute ;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.hero_section-more p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+}
+
+.about_section  {
+    padding: 100px var(padding-x);
+    background: rgb(36,0,6);
+background: linear-gradient(90deg, rgba(36,0,6,1) 0%, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 47%, rgba(0,0,0,1) 48%, rgba(5,0,0,1) 100%, rgba(28,0,0,1) 100%, rgba(39,0,0,1) 100%);
+    color: white;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 35px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.about_section p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.idols_section {
+    padding: 100px 100px;
+    background-image: url(newells_862x485.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.idols_section::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.idols_section * {
+    position: relative;
+    z-index: 1;
+}
+
+.idols_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 275px));
+    gap: 10%;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.idols_card-grid {
+    width: 100%;
+    background-color: red;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 200px auto;
+    padding: 35px;
+    gap: 15px;
+}
+
+.idols_card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.idols_card-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 170px;
+    max-width: 175px;
+}
+
+.idols_card-text h3 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.contact_section {
+    background-color: red;
+    padding: 100px var(--padding-x) ;
+}
+
+.contact_formContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 50px;
+}
+
+.contact_formContainer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact_formContainer-img img {
+    width: 100%;
+    max-width: 470px;
+    object-fit: contain;
+}
+
+.contact_formContainer-form {
+    display: flex;
+}
+
+
+.contact_formContainer-form .form_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.contact_formContainer-form .form_item label {
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.contact_formContainer-form .form_item input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    outline: none;
+    width: 100%;
+}
+
+.contact_formContainer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact_formContainer-form form button {
+    width: 40%;
+    align-self: center;
+    padding: 0px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+    transition:background-color 0.3s;
+}
+
+.contact_formContainer-form form button:hover {
+    background-color: white;
+    color: red;
+    font-weight: 600;
+}   
+
+.menu_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1235) {
+    :root {
+        --padding-x: 50px;
+    }
+    .idols_container {
+        gap: 3%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu_mobile {
+        display: block;
+    }
+    .hero_section-text h1 {
+        font-size: 4em;
+    }
+    .contact_formContainer {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 411px) {
+    
+}
+
+@media screen and (max-width: 360px) {
+    
+}

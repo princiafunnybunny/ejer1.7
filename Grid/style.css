@@ -1,0 +1,52 @@
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+}
+
+
+.a {
+    background-color: red;
+}
+
+.b {
+    background-color: orange;
+}
+
+.c {
+    background-color: orangered;
+}
+
+.d {
+    background-color: olivedrab ;
+}
+
+
+
+.contenedor-grid-nombrado {
+    display: grid;
+    grid-template-columns:[x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows:[y0] 1fr [y1] 1fr [y2] 1fr [y3];
+}
+
+.header {
+    background-color: blueviolet;
+    grid-column: x0 / x3;
+}
+
+.sidebar {
+    background-color: violet;
+    grid-row: y1 / y2;
+}
+
+.content {
+    background-color: pink;
+    grid-column: x1 / x3;
+    grid-row: y1 / y2;
+}
+
+.footer {
+    background-color: rgb(202, 5, 123);
+    grid-column: x0 / x3;
+    grid-row: y2;
+}
